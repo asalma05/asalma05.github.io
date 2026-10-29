@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Salma Aouami — Data & AI engineering</title>
-<meta name="description" content="Salma Aouami, final-year Computer Engineering student at the International University of Rabat, working on SAP Data & Analytics, data engineering and AI.">
+<meta name="description" content="Salma Aouami, final-year Computer Engineering student at the International University of Rabat, SAP Certified Data Analyst (SAP Analytics Cloud), working on SAP Data & Analytics, data engineering and AI.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
@@ -122,6 +122,14 @@ p{margin:0}
 .badges a{font-family:var(--display); font-size:15px; justify-self:end; min-height:44px; display:inline-flex; align-items:center}
 @media (max-width:760px){ .badges li{grid-template-columns:1fr} .badges a{justify-self:start} }
 .also{margin-top:40px; color:var(--mist); max-width:720px}
+.certcard{margin-top:48px; display:grid; grid-template-columns:minmax(0,1fr) auto; gap:20px 40px; align-items:end; padding:32px clamp(22px,3vw,40px); border:1.5px solid var(--lavender); border-left:6px solid var(--garnet); border-radius:18px; background:rgba(32,31,64,.72)}
+.certcard .ck{font-family:var(--display); font-size:14px; color:var(--lavender); letter-spacing:.01em}
+.certcard h3{margin-top:10px; font-size:clamp(1.5rem,2.8vw,2.3rem); line-height:1.1; color:var(--white)}
+.certcard p{margin:14px 0 0; color:var(--mist); max-width:640px}
+.certcard .cm{font-family:var(--display); font-size:15px; color:var(--lavender); margin-top:16px}
+.subhead{margin-top:72px; font-size:clamp(1.2rem,1.8vw,1.5rem); color:var(--white)}
+.subhead + .badges{margin-top:24px}
+@media (max-width:760px){ .certcard{grid-template-columns:1fr; align-items:start} }
 
 /* giving back */
 .give{display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:56px; align-items:center}
@@ -223,7 +231,7 @@ body.locked{overflow:hidden}
     <a class="wide" href="#about">About</a>
     <a class="wide" href="#experience">Experience</a>
     <a href="#work">Work</a>
-    <a class="wide" href="#badges">Badges</a>
+    <a class="wide" href="#badges">Certification</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
@@ -259,6 +267,7 @@ body.locked{overflow:hidden}
         <div><dt>Studying</dt><dd>Engineering degree in Computer Engineering, UIR, 2024 to 2027</dd></div>
         <div><dt>Based in</dt><dd>Tangier, Morocco</dd></div>
         <div><dt>Focus</dt><dd>SAP Datasphere, SAP Analytics Cloud, data and AI</dd></div>
+        <div><dt>Certified</dt><dd><a href="https://www.credly.com/badges/b1a0e371-dda2-4f3c-95c9-b1bb6ff1a48c" target="_blank" rel="noopener">SAP Certified Data Analyst, SAP Analytics Cloud</a></dd></div>
         <div><dt>Projects so far</dt><dd>Two internships and twelve projects</dd></div>
       </dl>
     </div>
@@ -290,7 +299,7 @@ body.locked{overflow:hidden}
               <li>Built a four-page dashboard in SAP Analytics Cloud for executives, controllers and analysts</li>
               <li>Forecast monthly net income six months ahead with SAP Smart Predict</li>
               <li>Built a departmental budget model driven by Data Actions in SAC Planning</li>
-              <li>Earned four SAP Learning badges in SAP Analytics Cloud along the way</li>
+              <li>Earned four SAP Learning badges in SAP Analytics Cloud along the way, then the SAP Certified Data Analyst – SAP Analytics Cloud certification in October 2026</li>
             </ul>
             <button class="btn" type="button" data-open="finance-gl-analytics">Read the full story</button>
           </div>
@@ -345,9 +354,20 @@ body.locked{overflow:hidden}
     </div>
   </section>
 
-  <section id="badges" data-dim="0.4" data-shape="7" data-color="#A40033" data-rail="Badges">
+  <section id="badges" data-dim="0.4" data-shape="7" data-color="#A40033" data-rail="Certification">
     <div class="wrap">
-      <div class="chapter-head"><h2>Learning badges</h2><p class="lede">Issued by SAP Learning. Each one opens its official verification page on SAP’s site.</p></div>
+      <div class="chapter-head"><h2>Certification and badges</h2><p class="lede">The badges came first, during my internship. The certification followed in October 2026.</p></div>
+      <article class="certcard" aria-labelledby="cert-title">
+        <div>
+          <p class="ck">SAP certification · Issued by SAP</p>
+          <h3 id="cert-title">SAP Certified – Data Analyst – SAP Analytics Cloud</h3>
+          <p>It confirms the core knowledge expected of an SAP Analytics Cloud data analyst, and the skills to work as a member of an SAC project team.</p>
+          <p class="cm">October 2026 · Valid until October 2027</p>
+        </div>
+        <a class="btn solid" href="https://www.credly.com/badges/b1a0e371-dda2-4f3c-95c9-b1bb6ff1a48c" target="_blank" rel="noopener">Verify on Credly</a>
+      </article>
+      <h3 class="subhead">SAP Learning badges</h3>
+      <p class="also" style="margin-top:12px">Each one opens its official verification page on SAP’s site.</p>
       <ul class="badges">
         <li><span class="bt">Exploring SAP Datasphere</span><span class="bm">Beginner, 3 h 25<br>20 October 2026</span><a href="https://badger.learning.sap.com/verify/xopul-mycof-ketit-fifah-cucyf" target="_blank" rel="noopener">Verify on SAP</a></li>
         <li><span class="bt">Leveraging Advanced Features in SAP Analytics Cloud for Planning</span><span class="bm">Advanced, 7 h 35<br>27 July 2026</span><a href="https://badger.learning.sap.com/verify/xypyt-comut-sevan-rimut-pokep" target="_blank" rel="noopener">Verify on SAP</a></li>
